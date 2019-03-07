@@ -1,0 +1,22 @@
+header{
+	font-style: roboto-condensed;
+}
+body{
+background-color: #f7f7f7;
+font-style: condensed;
+}
+img {
+    height: 200px;
+}
+.green-section{
+	background-color: lightgreen;
+}
+section.orage-section {
+    background-color: darkorange;
+}
+section.purple-section {
+    background-color: slateblue;
+}
+section.blue-section{
+	background-color: lightblue;
+}
