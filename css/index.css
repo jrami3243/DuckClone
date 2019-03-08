@@ -1,16 +1,23 @@
+a{
+	font-family: 'Open Sans', sans-serif; 
+}
 header{
 	font-style: roboto-condensed;
 }
 nav.navbar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+.twitter {
+    padding-left: 35px;
 }
 body{
 background-color: #f7f7f7;
 font-style: condensed;
 }
 img {
-    height: 150px;
+    height: 120px;
 }
 section.main-logo {
     display: flex;
@@ -27,23 +34,29 @@ input[type="text"] {
 .search-bar{
 	display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
-.text-underlogo{
-	padding-top: 25px;
+
+.text-underlogo {
     display: flex;
     justify-content: center;
+    padding-top: 15px;
 }
 .underlogocircle{
 	display: flex;
     justify-content: center;
     padding-top: 34px;
+    padding-top: 160px;
 }
 img#undersearch-flag {
-    height: 70px;
+    height: 60px;
+}
+section.white-section {
+    height: 90vh;
 }
 
 .green-section {
-    background-color: lightgreen;
+    background-color: #58b792;
     display: flex;
     align-items: center;
     flex-direction: column;
