@@ -2,11 +2,14 @@
 <html>
 <head>
 	<title>DuckClone</title>
+	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
 	<script type="text/javascript"src="javascript/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet" href="css/index.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet" href="css/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 </head>
 
@@ -15,33 +18,21 @@
 	<header>
 		<nav class="navbar">
 			<p>Privacy, simplified</p>
-			<div class="twitter">
-				<i class="fab fa-twitter"></i>
-			</div>	
-		</nav>
-		
-		<!-- <div class="sidebar">
-			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul> -->
+					<div class="fab fa-twitter">
 
-				
-		
+					</div>
+				<div class="button">
+					<button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+					<div id="container">
+
+
+			</div>
+				</div>
+		</nav>
 	</header>
+
+
+
 <!-- beginning of logo and search -->
 	<main>
 		<section class="white-section">
@@ -54,7 +45,7 @@
 		</div>
 		<div class="search-bar">
 				<input type="text" name="search" placeholder="">
-				<button>Search</button>
+				<button id="search-btn" type="submit"><i class="fa fa-search"></i></button>
 		</div>
 		<!-- text under search bar -->
 		<div class="text-underlogo">
@@ -63,61 +54,80 @@
 		</div>
 		<div class="underlogocircle">
 			<img id="undersearch-flag"src="images/teaser.png">
-		</div>
+		</div>	
+			<div>
+				<i class="fas fa-arrow-down"></i>
+			</div>	
+
+		
 	</section>
 
 <!-- begin green section -->
-		<div class="green-section">
-			<div class="green-content">
+
+<section class="green-section">
+		<div class="green-content">
+			<div class="green-centered">			
 				<h3>We don't store your personal information.Ever</h3>
 			</div>	
 			<div class="second-content">				
 				<h4>Our privacy policy is simple: we don't collect <br>
 				or share any of your personal information.</h4>
-				
 			</div>
-			<div><button ref="#">Add DuckDuckGo to Chrome</button>
-			</div>
-
 			<div>
-				<img src="images/no-information-stored.svg">
+				<button ref="#">Add DuckDuckGo to Chrome</button>
 			</div>
 		</div>
-		<!-- orange section -->
-		<section class="orage-section">
-			<div class="orange-content">
-				<h3>We don't follow you around with ads.</h3>
-			</div>	
-			<div class="orange-content">				
-				<h4>We don't store your search history. We therefore have nothing<br>
-				 to sell to adverisers that track you across the Internet. </h4>
-				
-			</div>
+		<div>
+				<img id="frog"src="images/no-information-stored.svg">
+		</div>
+</section>
+
+<!-- orange section -->
+
+<section class="orange-section">
+	<div class="orange-content">
+		<div class="orange-centered">
+			<h3>We don't follow you around with ads.</h3>
+		</div>	
+		<div class="second-content">				
+			<h4>We don't store your search history. We therefore have nothing<br>
+			to sell to adverisers that track you across the Internet. </h4>	
+		</div>
 		<div>
 			<button ref="#">Add DuckDuckGo to Chrome</button>
 		</div>
-			<div>
-				<img src="images/no-ads.svg">
-			</div>
+		<div>
+			<img id="ghost" src="images/no-ads.svg">
+		</div>
+	</div>	
+</section>	
 			<!-- purple section -->
-			<section class="purple-section">
-			<div class="purple-content">
-				<h3>We don't track you in or out of private browsing mode.</h3>
-			</div>	
-			<div class="secpurp-content">				
-				<h4>Other search engines track your searches even when you're in private browsing mode. We don't track you  - period. </h4>
-				
-			</div class="green-btn">
+<section class="purple-section">
+	<div class="purple-content">
+		<div class="purple-centered">	
+			<h3>We don't track you in or out of private browsing mode.</h3>
+		</div>	
+		<div class="secpurp-content">				
+				<h4>Other search engines track your searches even when you're <br>
+				in private browsing mode. We don't track you - period. </h4>
+		</div>
+		<div>
 			<button ref="#">Add DuckDuckGo to Chrome</button>
-			<div>
-				<img src="images/no-tracking.svg">
-			</div>
+		</div>
+		<div>
+			<img id="bathtub"src="images/no-tracking.svg">
+		</div>
+	</div>
+</section>
+
 			<!-- last blue section -->
-			
-			<section class="blue-section">
+<section class="blue-section">
+		<div class="blue-content">
 			<div class="top-blue">
-				<p>Dismiss forever</p>
-				<p>Back to search</p>
+				<div class="upper-textblue">
+					<a href="#">Dismiss forever</a>
+					<a href="#">Back to search</a>
+				</div>
 			</div>
 			<div class="blue-content">
 				<h3>Switch to DuckDuckGo and take your privacy!</h3>
@@ -130,28 +140,12 @@
 			<button ref="#">Add DuckDuckGo to Chrome</button>
 		</div>
 			<div>
-				<img src="images/switch-to-duckduckgo.svg">
+				<img id="climb"src="images/switch-to-duckduckgo.svg">
 			</div>
+		</div>	
+		</section>	
 
-			
-
-
-
-
-
-
-
-
-
-
-
-		</section>
-	</main>
-
-
-	<footer>
-		
-	</footer>
+</main>
 
 </body>
 </html>
