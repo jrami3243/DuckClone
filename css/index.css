@@ -19,8 +19,14 @@ nav.navbar {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); 
 }
-.left-text p{
+/*.left-text p{
 	padding-right: 10px;
+}*/
+.left-text p, i {
+    padding-right: 10px;
+    opacity: .5;
+    cursor: pointer;
+    padding-right: 10px;
 }
 
 i {
@@ -38,6 +44,8 @@ i {
     display: flex;
     align-items: center;
    	padding-right: 40px;
+   	cursor: pointer;
+
 }
 .fa-twitter:before {
     content: "\f099";
@@ -97,6 +105,16 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     padding-top: 15px;
+    align-items: center;
+
+}
+.text-underlogo p{
+    opacity: .5;
+}
+.text-underlogo a {
+    color: #85c7ef;
+    text-decoration-line: none;
+
 }
 .underlogocircle{
 	display: flex;
@@ -106,6 +124,20 @@ input[type="text"] {
 }
 img#undersearch-flag {
     height: 60px;
+}
+.black-arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.black-arrow i.fas.fa-arrow-down {
+    border-radius: 50%;
+    background: black;
+    color: white;
+    border: none;
+    opacity: 1.0;
+    font-size: larger;
+    padding: 5px;
 }
 section.white-section {
     height: 93vh;
@@ -126,6 +158,14 @@ section.white-section {
     align-items: center;
         text-align: center;
 }
+#green-btn{
+	padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    background-color: #2C5B49;
+    color: white;
+    border: none;
+}
+
 img#frog {
     height: 250px;
 }
@@ -145,6 +185,13 @@ img#frog {
     flex-direction: column;
     align-items: center;
         text-align: center;
+}
+#orange-btn{
+	padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    background-color: #7a511c;
+    color: white;
+    border: none;
 }
 
 img#ghost{
@@ -169,6 +216,13 @@ img#ghost{
     align-items: center;
         text-align: center;
 }
+#purple-btn{
+	padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    background-color: #2f315e;
+    color: white;
+    border: none;
+}
 
 img#bathtub {
 	height: 250px;
@@ -188,6 +242,13 @@ img#bathtub {
     flex-direction: column;
     align-items: center;
         text-align: center;
+}
+#blue-btn{
+	padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    background-color: #41658d;
+    color: white;
+    border: none;
 }
 img#climb{
 	height: 250px;
