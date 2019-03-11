@@ -94,6 +94,8 @@ section.white-section {
 	display: flex;
     flex-direction: column;
     align-items: center;
+        text-align: center;
+}
 }
 img#frog {
     height: 250px;
@@ -113,6 +115,8 @@ img#frog {
 	display: flex;
     flex-direction: column;
     align-items: center;
+        text-align: center;
+}
 }
 
 img#ghost{
@@ -135,6 +139,8 @@ img#ghost{
 	display: flex;
     flex-direction: column;
     align-items: center;
+        text-align: center;
+}
 }
 img#bathtub{
 	height: 250px;
@@ -153,6 +159,7 @@ img#bathtub{
 	display: flex;
     flex-direction: column;
     align-items: center;
+        text-align: center;
 }
 img#climb{
 	height: 250px;
