@@ -5,7 +5,7 @@
 	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
 	<script type="text/javascript"src="javascript/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" href="css/index.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet" href="css/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,23 +19,136 @@
 		<nav class="navbar">
 			<div class="left-text">
 				<p>Privacy, simplified</p>
-				<i class="down"></i></p>
 			</div>
+			<div class="bigdrop"> 
+				<button class="firstbutton" onclick="thisFunction()">
+					&#x25BC
+				</button>
+				<div class="bigdrop-content" id="bigContent">
 
-					<div class="fab fa-twitter">
-					<i class="down"></i></p>	
-
+					<div class="head-boxes">
+						<img src="images/header/woman-icon.svg">
+						<div>
+						<a href="#">Get our App & Extension</a>
+						<p>Protect your data on every device.</p>
+						</div>
 					</div>
 
-				<div class="button">
-					<button class="w3-button w3 w3-xlarge" onclick="w3_open()">☰</button>
-					<div id="container">
+					<div class="head-boxes">
+						<img id="news" src="images/header/news.svg">
+						<div>
+						<a href="#">Subscribe to our Privacy Crash Course</a>
+						<p>Learn about online privacy right in your inbox.</p>
+						</div>
+					</div>
+
+					<div class="head-boxes">
+						<img src="images/header/spread-word.svg">
+						<div>
+						<a href="#"> Protect Your Devices </a>
+						<p>Check out our privacy device guides.</p>
+						</div>
+					</div>
+					<div class="head-boxes">
+						<img src="images/header/privacy-simplified.svg">
+						<div>
+						<a href="#">Spread DuckDuckGo</a>
+						<p>Help your friends and family join the Duck Side!</p>
+						</div>
+					</div>
+<section class="lower-boxes">
+					<div class="smaller-boxes">
+						<img src="images/header/donations.svg">
+						<p>$1,300,000 in privacy donations!
+						</p>
+					</div>
+					<div class="smaller-boxes">
+						<img src="images/header/traffic.svg">
+						<p> Over 22 Billion anonymous searches.
+						</p>
+					</div>
+					<div class="smaller-boxes">
+						<img src="images/header/privacy-tips.svg">
+						<p>Learn why reducing tracking is important.
+						</p>
+					</div>
+</section>
+
+
+
+
+
 
 
 			</div>
-				</div>
-		</nav>
-	</header>
+			</div>
+
+			<i href="#" class="fab fa-twitter"></i>
+			<div class="dropdown">
+				<button class="dropbtn" onclick="myFunction()">
+
+				&#x25BC
+
+				</button>
+
+				<div class="dropdown-content" id="myDropdown">
+
+						<div class="twit">
+							<a href="#">Twitter</a>
+							<a><img id="tweet" src="images/header/twitter-blue.png"></a>
+						</div>
+						<div class="red">
+    						<a href="#">Reddit</a>
+    						<a><img id="reddit" src="images/header/reddit-icon.png"></a>
+    					</div>	
+    					<div class="blogg">
+    					<a href="#">Global</a>
+    					<a><img id="blog" src="images/header/blog-icon.png"></a>
+    					</div>
+    				</div>
+					
+					</div>
+
+
+		<div class="button">
+		<button class="w3-button w3 w3-xlarge" onclick="openNav()">☰</button>
+		</div>
+
+
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+  <p>SETTINGS</p>
+  <a href="#">More Themes</a>
+  <a href="#">Other Settings</a>
+  <a href="#">!Bang Search Shortcuts</a>
+  <a href="#">Contact</a>
+
+  <p>PRIVACY ESSENTIALS</p>
+  <a href="#"> Private Search</a>
+  <a href="#">App and Extension</a>
+
+  <p>WHY PRIVACY</p>
+  <a href="#">Privacy Blog</a>
+  <a href="#">Privacy Crash Course</a>
+  <a href="#">Help Spread Privacy</a>
+
+  <p>WHO WE ARE</p>
+  <a href="#">About us</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Careers</a>
+  <a href="#">Press Kit</a>
+
+  <p>Keep in Touch</p>
+  <a href="#">Twitter</a>
+  <a href="#">Reddit</a>
+  <a href="#">Help</a>
+
+	
+
+	</div>
+	</nav>
+</header>
 
 
 
@@ -70,86 +183,58 @@
 
 <!-- begin green section -->
 
-<section class="green-section">
-		<div class="green-content">
-			<div class="green-centered">			
-				<h3>We don't store your personal information.Ever</h3>
-			</div>	
-			<div class="second-content">				
-				<h4>Our privacy policy is simple: we don't collect <br>
+<section class="green-section">	
+					
+				<h3>We don't store your personal information.Ever</h3>					
+				<h4>Our privacy policy is simple: we don't collect
 				or share any of your personal information.</h4>
-			</div>
-			<div>
 				<button id="green-btn" ref="#">Add DuckDuckGo to Chrome</button>
-			</div>
-		</div>
-		<div>
+			
 				<img id="frog"src="images/no-information-stored.svg">
-		</div>
+
+		
 </section>
 
 <!-- orange section -->
 
 <section class="orange-section">
-	<div class="orange-content">
-		<div class="orange-centered">
-			<h3>We don't follow you around with ads.</h3>
-		</div>	
-		<div class="second-content">				
-			<h4>We don't store your search history. We therefore have nothing<br>
+			<h3>We don't follow you around with ads.</h3>					
+			<h4>We don't store your search history. We therefore have nothing
 			to sell to adverisers that track you across the Internet. </h4>	
-		</div>
-		<div>
 			<button id="orange-btn" ref="#">Add DuckDuckGo to Chrome</button>
-		</div>
-		<div>
 			<img id="ghost" src="images/no-ads.svg">
-		</div>
-	</div>	
+			
 </section>	
 			<!-- purple section -->
 <section class="purple-section">
-	<div class="purple-content">
-		<div class="purple-centered">	
-			<h3>We don't track you in or out of private browsing mode.</h3>
-		</div>	
-		<div class="secpurp-content">				
-				<h4>Other search engines track your searches even when you're <br>
+	
+			<h3>We don't track you in or out of private browsing mode.</h3>				
+			<h4>Other search engines track your searches even when you're
 				in private browsing mode. We don't track you - period. </h4>
-		</div>
-		<div>
+		
+	
 			<button id="purple-btn" ref="#">Add DuckDuckGo to Chrome</button>
-		</div>
-		<div>
+	
 			<img id="bathtub"src="images/no-tracking.svg">
-		</div>
-	</div>
+		
 </section>
 
 			<!-- last blue section -->
 <section class="blue-section">
-		<div class="blue-content">
-			<div class="top-blue">
 				<div class="upper-textblue">
 					<a href="#">Dismiss forever</a>
 					<a href="#">Back to search</a>
 				</div>
-			</div>
-			<div class="blue-content">
-				<h3>Switch to DuckDuckGo and take your privacy!</h3>
-			</div>	
-			<div class="secblue-content">				
+			
+				<h3>Switch to DuckDuckGo and take your privacy!</h3>	
+							
 				<h4>No tracking, no ad targeting, just searching. </h4>
 				
-			</div>
-		<div>
-			<button id="blue-btn" ref="#">Add DuckDuckGo to Chrome</button>
-		</div>
-			<div>
+			
+				<button id="blue-btn" ref="#">Add DuckDuckGo to Chrome</button>
+	
 				<img id="climb"src="images/switch-to-duckduckgo.svg">
-			</div>
-		</div>	
-		</section>	
+</section>	
 
 </main>
 
